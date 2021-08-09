@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
 from .models import Listing
 from .choices import price_choices, state_choices, bedroom_choices
+from django.views.generic import DetailView
 
 
 # Create your views here.
@@ -18,13 +19,20 @@ def index(request):
     return render(request, 'listings/listings.html', context)
 
 
-def listing(request, listing_id):
-    listing = get_object_or_404(Listing, pk=listing_id)
+class ListingView(DetailView):
+    model = Listing
+    context_object_name = 'listing'
+    template_name = 'listings/listing.html'
 
-    context = {
-        'listing': listing
-    }
-    return render(request, 'listings/listing.html', context)
+    def get_object(self, queryset=None):
+        return get_object_or_404(Listing, id=self.kwargs.get('listing_id'))
+# def listing(request, listing_id):
+#     listing = get_object_or_404(Listing, pk=listing_id)
+#
+#     context = {
+#         'listing': listing
+#     }
+#     return render(request, 'listings/listing.html', context)
 
 
 def search(request):

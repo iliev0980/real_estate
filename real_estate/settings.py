@@ -97,6 +97,10 @@ DATABASES = {
 
         'PORT': '5432',
 
+        'TEST': {
+            'NAME': 'test_real_estate',
+        }
+
     }
 
 }

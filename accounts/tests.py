@@ -28,6 +28,8 @@ class UserTest(TestCase):
             'password2': 'test123',
         }
         res = self.client.post(reverse('register'), payload)
+        messages = list(get_messages(res.wsgi_request))
+        self.assertEqual(str(messages[0]), 'You are now registered and can log in')
         self.assertRedirects(res, reverse('login'))
 
 
@@ -44,11 +46,13 @@ class UserTest(TestCase):
         res = self.client.post(reverse('register'), payload)
         messages = list(get_messages(res.wsgi_request))
         self.assertEqual(str(messages[0]), 'Passwords do not match!')
+        self.assertRedirects(res, reverse('register'))
 
 
 
 
-    def test_username_already_exists_returns_message(self):
+
+    def test_username_already_exists_returns_message_and_redirects(self):
         payload = {
             'first_name': 'test first',
             'last_name': 'test second',
@@ -64,6 +68,8 @@ class UserTest(TestCase):
         res = self.client.post(reverse('register'), payload)
         messages = list(get_messages(res.wsgi_request))
         self.assertEqual(str(messages[0]), 'That username is taken')
+        self.assertRedirects(res, reverse('register'))
+
 
 
     def test_email_already_exists_returns_message(self):
@@ -83,4 +89,6 @@ class UserTest(TestCase):
         res = self.client.post(reverse('register'), payload)
         messages = list(get_messages(res.wsgi_request))
         self.assertEqual(str(messages[0]), 'This email is beings used')
+        self.assertRedirects(res, reverse('register'))
+
 

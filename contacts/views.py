@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect
 from django.contrib import messages
 from .models import Contact
 from django.core.mail import send_mail

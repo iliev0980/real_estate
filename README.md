@@ -1,6 +1,7 @@
 # Real Estate App
 Real Estate public listings portal with private panel for realtors and admins.
 
+
 ---
 # Install [Python](https://www.python.org/downloads/)
 

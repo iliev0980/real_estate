@@ -1,0 +1,122 @@
+[
+  {
+    "model": "listings.listing",
+    "pk": 1,
+    "fields": {
+      "realtor": 1,
+      "title": "Amazing house Low price",
+      "address": "Makedonia 11",
+      "city": "Varna",
+      "state": "Varna",
+      "zipcode": "32S 23F",
+      "description": "this is an amazing home",
+      "price": 322000,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "garage": 1,
+      "sqft": 60,
+      "lot_size": 100,
+      "photo_main": "https://img.staticmb.com/mbcontent/images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 2,
+    "fields": {
+      "realtor": 1,
+      "title": "Amazing house Low price",
+      "address": "Makedonia 19",
+      "city": "Varna",
+      "state": "Varna",
+      "zipcode": "32S 213F",
+      "description": "this is an amazing home",
+      "price": 340000,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "garage": 1,
+      "sqft": 60,
+      "lot_size": 100,
+      "photo_main": "https://img.staticmb.com/mbcontent/images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 3,
+    "fields": {
+      "realtor": 1,
+      "title": "Amazing house Low price",
+      "address": "Makedonia 19",
+      "city": "Varna",
+      "state": "Varna",
+      "zipcode": "32S 213F",
+      "description": "this is an amazing home",
+      "price": 390000,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "garage": 2,
+      "sqft": 90,
+      "lot_size": 100,
+      "photo_main": "https://img.staticmb.com/mbcontent/images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 4,
+    "fields": {
+      "realtor": 1,
+      "title": "Amazing house Low price",
+      "address": "Makedonia 19",
+      "city": "Varna",
+      "state": "Varna",
+      "zipcode": "32S 213F",
+      "description": "this is an amazing home",
+      "price": 340000,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "garage": 1,
+      "sqft": 60,
+      "lot_size": 100,
+      "photo_main": "https://img.staticmb.com/mbcontent/images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 5,
+    "fields": {
+      "realtor": 1,
+      "title": "Amazing flat Low price nice region",
+      "address": "Makedonia 19",
+      "city": "Varna",
+      "state": "Varna",
+      "zipcode": "32S 213F",
+      "description": "this is an amazing home",
+      "price": 231200,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "garage": 1,
+      "sqft": 60,
+      "lot_size": 100,
+      "photo_main": "https://img.staticmb.com/mbcontent/images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 6,
+    "fields": {
+      "realtor": 1,
+      "title": "Amazing house on low price for refurbishment",
+      "address": "Makedonia 34",
+      "city": "Varna",
+      "state": "Varna",
+      "zipcode": "22S 213F",
+      "description": "this is an amazing home",
+      "price": 500000,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "garage": 1,
+      "sqft": 90,
+      "lot_size": 100,
+      "photo_main": "https://img.staticmb.com/mbcontent/images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg"
+    }
+  }
+]

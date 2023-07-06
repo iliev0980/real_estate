@@ -1,0 +1,22 @@
+[
+  {
+    "model": "realtors.realtor",
+    "pk": 1,
+    "fields": {
+      "name": "Ivan Ivanov",
+      "photo": "https://img.staticmb.com/mbcontent/images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg",
+      "phone": "3214354312",
+      "email": "varna.office@gmail.com"
+    }
+  },
+      {
+    "model": "realtors.realtor",
+    "pk": 2,
+    "fields": {
+      "name": "petar petrov",
+      "photo": "https://img.staticmb.com/mbcontent/images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg",
+      "phone": "3214354312",
+      "email": "varna.office@gmail.com"
+    }
+  }
+]

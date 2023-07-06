@@ -1,5 +1,5 @@
 # Real Estate App
-Real Estate listings portal with private panel for realtors and admins.
+Real Estate public listings portal with private panel for realtors and admins.
 
 ---
 # Install [Python](https://www.python.org/downloads/)
@@ -41,7 +41,3 @@ Real Estate listings portal with private panel for realtors and admins.
 
 ## If you need to create an admin user run the next command and follow the instructions in the console
 `docker-compose -f docker-compose.prod.yml exec web python manage.py createsuperuser`
-
-#### If you want to change the password for the email that is used to send archived invoices to the accoounting edit the EMAIL_PASSWORD variable in .env.prod file
-#### If you want to change the email address change EMAIL_HOST_USER variable in gsoft_erp_invoices/settings.py
-#### If you want to change the accounting email change the ACCOUNTING_EMAIL variable in gsoft_erp_invoices/settings.py
